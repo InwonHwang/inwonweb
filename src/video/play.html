@@ -4,9 +4,8 @@
   <title>Inwonweb</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../assets/css/custom.css">
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
@@ -19,10 +18,10 @@
 <body>
 
     <nav class="navbar navbar-inverse">
-        <div class = "col-xs-0 col-md-1">
+        <div class = "col-xs-0 col-md-2">
         </div>
 
-        <div class = "col-xs-12 col-md-10">
+        <div class = "col-xs-12 col-md-8">
             <div class="container-fluid">
                 <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -35,37 +34,40 @@
 
                 <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li><a href="..\index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li class="active"><a href="#">Video</a></li>
-                    <li><a href="game.html">Game</a></li>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li class="active"><a href="dx9.html">Video</a></li>
+                    <li><a href="../game.html">Game</a></li>
                 </ul>
                 </div>
             </div>
         </div>
 
-        <div class = "col-xs-0 col-md-1">
+        <div class = "col-xs-0 col-md-2">
         </div>
     </nav>
-
-    <div class="container-fluid">
-        <div class="col-xs-0 col-md-1">
+    
+    
+    <div class="container-fluid">   
+        <div class="spaceblock"></div>
+        <div class="spaceblock"></div>
+        <div class="col-xs-1 col-md-2">
         </div>
-        <div class="col-xs-12 col-md-10">
-            <br>            
-
-             <ul class="nav nav-tabs">
-                <li class ="active" role="presentation"><a href="#">DX9</a></li>
-                <li role="presentation"><a href="#">Unity</a></li>
-                <li role="presentation"><a href="#">Etc..</a></li>
-            </ul>
+        <div class="col-xs-10 col-md-8">
+            <div class="embed-responsive embed-responsive-4by3">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wRW9EhGlKqk"></iframe>
+            </div>
+            <div class="spaceblock">&nbsp</div>
+            <div class="embed-responsive embed-responsive-4by3">
+                <p>테스트 동영상입니다.</p>
+            </div>
         </div>
-        <div class="col-xs-0 col-md-1">
+        <div class="col-xs-1 col-md-2">
         </div>
     </div>
 
-  <footer>
-  </footer>
+    <footer>
+    </footer>
 
 </body>
 </html>

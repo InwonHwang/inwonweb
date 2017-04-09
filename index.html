@@ -4,24 +4,23 @@
   <title>Inwonweb</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">  
+  <link rel="stylesheet" href="assets/css/custom.css">  
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
     }
-    
+   
   </style>
 </head>
 <body>
 
   <nav class="navbar navbar-inverse">
-    <div class = "col-xs-0 col-md-1">
+    <div class = "col-xs-0 col-md-2">
     </div>
-    <div class = "col-xs-12 col-md-10">
+    <div class = "col-xs-12 col-md-8">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -36,19 +35,19 @@
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="src/about.html">About</a></li>
-            <li><a href="src/video.html">Video</a></li>
+            <li><a href="src/video/dx9.html">Video</a></li>
             <li><a href="src/game.html">Game</a></li>
           </ul>
         </div>
     </div>
-    <div class = "col-xs-0 col-md-1">
+    <div class = "col-xs-0 col-md-2">
     </div>
     
     </div>
   </nav>
 
   <!-- carousel -->
-  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -61,7 +60,8 @@
         <img class="first-slide" src="https://placehold.it/1500x400?text=IMAGE" alt="First slide">
         <div class="container-fluid">
           <div class="carousel-caption">
-            <h1>게임 제목</h1>
+            <h1>게임 이름</h1>
+            <p>간단한 게임 소개</p>
             <p>간단한 게임 소개</p>
             <p><a class="btn btn-lg btn-primary" href="#" role="button">Play</a></p>
           </div>
@@ -71,7 +71,7 @@
         <img class="second-slide" src="https://placehold.it/1500x400?text=IMAGE" alt="Second slide">
         <div class="container-fluid">
           <div class="carousel-caption">
-            <h1>게임 제목</h1>
+            <h1>게임 이름</h1>
             <p>간단한 게임 소개</p>
             <p><a class="btn btn-lg btn-primary" href="#" role="button">Play</a></p>
           </div>
@@ -92,112 +92,121 @@
 
 
   <div class="container-fluid bg-1 text-center">  
-    <div class = "col-xs-0 col-md-1">
+    <div class = "col-xs-0 col-md-2">
     </div>    
 
-    <div class = "col-xs-12 col-md-10">
+    <div class = "col-xs-12 col-md-8">
 
       <div class = "colxs-12 col-md-12">
         <h2>Hello</h2><br> 
         <div class="row featurette">
-          <div class="col-md-3">
-            <img src="https://placehold.it/300x300?text=IMAGE" class="featurette-image img-responsive center-block"  alt="Generic placeholder image">
+          <div class="col-md-4">
+            <img src="https://cdn.pixabay.com/photo/2016/11/23/13/40/iphone-1852901_960_720.jpg" class="img-thumbnail featurette-image img-responsive center-block" style="width:150%"  alt="Generic placeholder image">
           </div>
-          <div class="col-md-9">
-            <h4 class = "pull-left">안녕하세요! 초보 프로그래머입니다!</h4><br><br><br>
-            <p class="pull-left">홍익대학교 게임소프트웨어공학과를 재학중인 학생입니다.</p>
+          <div class="col-md-8">
+            <h4 class = "pull-left">안녕하세요! 초보 프로그래머 황인원입니다!</h4><br><br><br>
+            <p class="pull-left"> C/C++, 그래픽스 프로그래밍 공부하고 있습니다.</p>
           </div>        
         </div>
+        <div class="spaceblock">&nbsp</div>
         <a class="pull-right" href="src/about.html">자세히 보기 >></a></p>
       </div>
       
+      <div class="underline">&nbsp</div>
       <div class = "colxs-12 col-md-12">
         <h2>Video</h2><br>  
         <div class = "row">
           <div class="col-xs-6 col-md-2">
-            <a href="#" class="thumbnail">  
-              <img src="https://placehold.it/80x120?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">  
+            <a href="src/video/play.html" class="img-rounded">  
+              <img src="http://cfile230.uf.daum.net/image/1645BF224BCA11571EBB01" class="img-responsive" style="width:100%" alt="Image">  
             </a>     
-            <p>Some text..</p>
+            <p>테스트</p>
           </div>
           <div class="col-xs-6 col-md-2">
-            <a href="#" class="thumbnail">  
+            <a href="#" class="img-rounded">  
             <img src="https://placehold.it/80x120?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">    
             </a>   
-            <p>Some text..</p>
+            <p>동영상 제목</p>
           </div>
           <div class="col-xs-6 col-md-2"> 
-            <a href="#" class="thumbnail">  
+            <a href="#" class="img-rounded">  
             <img src="https://placehold.it/80x120?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
             </a>
-            <p>Some text..</p>
+            <p>동영상 제목</p>
           </div>
           <div class="col-xs-6 col-md-2">
-            <a href="#" class="thumbnail">  
+            <a href="#" class="img-rounded">  
             <img src="https://placehold.it/80x120?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
             </a>
-            <p>Some text..</p>
+            <p>동영상 제목</p>
           </div>
           <div class="col-xs-6 col-md-2">
-            <a href="#" class="thumbnail">  
+            <a href="#" class="img-rounded">  
             <img src="https://placehold.it/80x120?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
             </a>
-            <p>Some text..</p>
+            <p>동영상 제목</p>
           </div>  
           <div class="col-xs-6 col-md-2">
-            <a href="#" class="thumbnail">  
+            <a href="#" class="img-rounded">  
             <img src="https://placehold.it/80x120?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
             </a>
-            <p>Some text..</p>
+            <p>동영상 제목</p>
           </div>
           <div class="col-xs-6 col-md-2">
-            <a href="#" class="thumbnail">  
+            <a href="#" class="img-rounded">  
               <img src="https://placehold.it/80x120?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">  
             </a>     
-            <p>Some text..</p>
+            <p>동영상 제목</p>
           </div>
           <div class="col-xs-6 col-md-2">
-            <a href="#" class="thumbnail">  
+            <a href="#" class="img-rounded">  
             <img src="https://placehold.it/80x120?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">    
             </a>   
-            <p>Some text..</p>
+            <p>동영상 제목</p>
           </div>
           <div class="col-xs-6 col-md-2"> 
-            <a href="#" class="thumbnail">  
+            <a href="#" class="img-rounded">  
             <img src="https://placehold.it/80x120?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
             </a>
-            <p>Some text..</p>
+            <p>동영상 제목</p>
           </div>
           <div class="col-xs-6 col-md-2">
-            <a href="#" class="thumbnail">  
+            <a href="#" class="img-rounded">  
             <img src="https://placehold.it/80x120?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
             </a>
-            <p>Some text..</p>
+            <p>동영상 제목</p>
           </div>
           <div class="col-xs-6 col-md-2">
-            <a href="#" class="thumbnail">  
+            <a href="#" class="img-rounded">  
             <img src="https://placehold.it/80x120?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
             </a>
-            <p>Some text..</p>
+            <p>동영상 제목</p>
           </div>  
           <div class="col-xs-6 col-md-2">
-            <a href="#" class="thumbnail">  
+            <a href="#" class="img-rounded">  
             <img src="https://placehold.it/80x120?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
             </a>
-            <p>Some text..</p>
+            <p>동영상 제목</p>
           </div>  
         </div>
-        <a class="pull-right" href="src/video.html">모든 영상 보기>></a></p>
+        <div class="spaceblock">&nbsp</div>
+        <a class="pull-right" href="src/video/dx9.html">모든 영상 보기>></a></p>
+
+         <div class="underline">&nbsp</div>
       </div>
     </div>
 
-    <div class = "col-xs-0 col-md-1">
+    <div class = "col-xs-0 col-md-2">
     </div>
   
   </div><br>
 
-  <footer>
-  </footer>
+  
+
+  <footer></footer>
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
 
 </body>
 </html>

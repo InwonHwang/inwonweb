@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | WebGL Test</title>
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+    <script src="TemplateData/UnityProgress.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <style>
+      /* Remove the navbar's default margin-bottom and rounded borders */ 
+      .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+      }
+      
+    </style>
+  </head>
+  <body class="template">
+    <nav class="navbar navbar-inverse">
+        <div class = "col-xs-0 col-md-2">
+        </div>
+
+        <div class = "col-xs-12 col-md-8">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="#">InwonHwang</a>
+                </div>  
+
+                <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../src/about.html">About</a></li>
+                    <li><a href="../src/video/dx9.html">Video</a></li>
+                    <li class="active"><a href="../src/game.html">Game</a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class = "col-xs-0 col-md-2">
+        </div>
+    </nav>
+    <div class="spaceblock"></div>
+    
+    <div class="template-wrap clear">
+      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
+      <br>
+      <div class="logo"></div>
+      <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
+      <div class="title">WebGL Test</div>
+    </div>
+    <script type='text/javascript'>
+  var Module = {
+    TOTAL_MEMORY: 268435456,
+    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+    compatibilitycheck: null,
+    backgroundColor: "#222C36",
+    splashStyle: "Light",
+    dataUrl: "Release/web.data",
+    codeUrl: "Release/web.js",
+    asmUrl: "Release/web.asm.js",
+    memUrl: "Release/web.mem",
+  };
+</script>
+<script src="Release/UnityLoader.js"></script>
+
+  </body>
+</html>
