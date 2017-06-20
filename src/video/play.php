@@ -4,6 +4,7 @@
   <title>Inwonweb</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-Frame-Options" content="sameorigin" />
   <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../assets/css/custom.css">
   <style>
@@ -36,7 +37,7 @@
                 <ul class="nav navbar-nav">
                     <li><a href="../../index.html">Home</a></li>
                     <li><a href="../about.html">About</a></li>
-                    <li class="active"><a href="#">Video</a></li>
+                    <li class="active"><a href="dx9.php">Video</a></li>
                     <li><a href="../game.html">Game</a></li>
                 </ul>
                 </div>
@@ -50,35 +51,35 @@
     
     <div class="container-fluid">   
         <div class="spaceblock"></div>
+        <div class="spaceblock"></div>
         <div class="col-xs-1 col-md-2">
         </div>
         <div class="col-xs-10 col-md-8">
-            <br> 
-            <div>       
-                <ul class="nav nav-tabs">
-                    <li class="leftspace">&nbsp</li>
-                    <li class="active" role="presentation"><a href="#">DX9</a></li>
-                    <li role="presentation"><a href="unity.html">Unity</a></li>
-                    <li role="presentation"><a href="etc.html">Etc..</a></li>
-                </ul>     
-            </div>
+            <?php
+                $id = $_POST["id"];;
+                $pdo = new PDO("mysql:host=localhost;dbname=inwonweb", "inwon", "bitnami") or die("PDO creation failure");
+
+                $stm = $pdo->prepare("SELECT * FROM board WHERE id=:id");
+                $stm->execute([ ":id" => $id]) or die("execute failed");
+                $result = $stm->fetchAll();
+
+                foreach ($result as $row) {?>
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=6ySoUF-9Ofk&list=RDQM3N61Ix9b8yc&index=22"></iframe>
+                        <iframe width="420" height="315" src=<?php echo $row["url"]; ?> frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="spaceblock">&nbsp</div>
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <p><?php echo $row["content"]; ?></p>
+                        <p><?php echo $row["url"]; ?></p>
+                    </div>
+             <?php   }  ?>
             
-            <div class="spaceblock">&nbsp</div>
-
-            <div class = "row">
-            <div class="col-xs-6 col-md-2">
-                <a href="play.html" class="img-rounded">  
-                <img src="http://cfile230.uf.daum.net/image/1645BF224BCA11571EBB01" class="img-responsive" style="width:100%" alt="Image">  
-                </a>     
-                <p>테스트 이미지</p>
-            </div>
-
+           
         </div>
         <div class="col-xs-1 col-md-2">
         </div>
     </div>
-
-   
 
     <footer>
     </footer>
